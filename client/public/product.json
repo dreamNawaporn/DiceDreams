@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "1",
+    "name": "Complete UX / UI Design",
+    "description": "Straight t-shirt in Della Cavalleria printed cotton",
+    "price": 578.37,
+    "image": "https://assets.hermes.com/is/image/hermesproduct/della-cavalleria-t-shirt--4E4629DA90-worn-1-0-0-800-800_g.jpg",
+    "category": "popular"
+  },
+  {
+    "_id": "2",
+    "name": "Dogon Compact wallet",
+    "description": "Compact wallet in Evercolor calfskin",
+    "price": 2150,
+    "image": "//assets.hermes.com/is/image/hermesproduct/dogon-compact-wallet--066382CK37-worn-1-0-0-1600-1600-q99_g.jpg",
+    "category": "popular"
+  },
+  {
+    "_id": "3",
+    "name": "Apple Watch Hermès",
+    "description": "Apple Watch Hermès",
+    "price": 1185.14,
+    "image": "https://watchesbysjx.com/wp-content/uploads/2019/09/apple-watch-hermes-series-5-4.jpg",
+    "category": "popular"
+  },
+  {
+    "_id": "4",
+    "name": "H Deco mug n°2",
+    "description": "The H Deco collection",
+    "price": 120.00,
+    "image": "//assets.hermes.com/is/image/hermesproduct/h-deco-mug-n-2--037131P-worn-1-0-0-1600-1600-q99_g.jpg",
+    "category": "popular"
+  },
+  {
+    "_id": "5",
+    "name": "Pop Grip",
+    "description": "Dainty Cosmic Polished Enamel PopGrip",
+    "price": 16.44,
+    "image": "https://popsockets.co.th/cdn/shop/files/QRX_Enamel_Dainty-Cosmic_03_Expanded_700x.png?v=1695237791",
+    "category": "Swags"
+  }
+]
