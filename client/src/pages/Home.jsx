@@ -5,6 +5,8 @@
 //import OurService from './OurService'
 import RecipeReviewCard from '../components/RecipeReviewCard'
 import Post from '../components/Post'
+import Ccreatepost from '../components/Ccreatepost'
+
 
 
 const Home = () => {
@@ -12,7 +14,8 @@ const Home = () => {
     <div>
       <Post/>
       <RecipeReviewCard/>
-    
+      <Ccreatepost/>
+   
       
     </div>
   )

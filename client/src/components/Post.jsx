@@ -1,25 +1,65 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+import { Link } from 'react-router-dom';
+import Box from '@mui/joy/Box';
+import Button from '@mui/joy/Button';
+import FormControl from '@mui/joy/FormControl';
+import FormLabel from '@mui/joy/FormLabel';
+import Textarea from '@mui/joy/Textarea';
 
 
-const Post = () => {
-    return (
-        <div className="section-container bg-gradient-to-r from-[#000000] from-0% to-[#000000] 
-        to-100% flex justify-center items-center ">
-            <div className='p-24  h-20 '>
-                <Card sx={{ maxWidth: 345 }}>
-                    <textarea className="textarea textarea-error fullWidth sx={{ m: 1 }}"
-                        placeholder="Let's create a party for fun."></textarea>
-                    <CardActions disableSpacing>
-                        <button className="btn btn-outline btn-error">Post</button>
-                    </CardActions>
-                </Card>
-            </div>
-        </div>
-    )
+export default function Post() {
+  const [italic, setItalic] = React.useState(false);
+  const [fontWeight, setFontWeight] = React.useState('normal');
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  return (
+    <div className='py-24 flex flex-col bg-black  '>
+      <FormControl sx={{
+        bgcolor: "black"
+
+      }}>
+        <FormLabel sx={{
+          color: "white",
+          bgcolor: "black"
+        }}>Let's create a party for fun</FormLabel>
+
+        <Link to="/Createpost">
+          <Textarea
+            placeholder="Type something here…"
+            minRows={3}
+            endDecorator={
+              <Box
+                sx={{
+                  display: 'flex',
+                  gap: 'var(--Textarea-paddingBlock)',
+                  pt: 'var(--Textarea-paddingBlock)',
+                  borderTop: '1px solid',
+                  borderColor: 'divider',
+                  flex: 'auto',
+
+                }}
+              >
+
+                <Button sx={{
+                  ml: 'auto'
+                }} >post</Button>
+              </Box>
+            }
+            sx={{
+              minWidth: 300,
+              fontWeight,
+              fontStyle: italic ? 'italic' : 'initial',
+              //bgcolor: "black",
+              //color:"white"
+
+
+            }}
+          />
+        </Link>
+      </FormControl>
+    </div>
+  );
 }
 
-export default Post
+
 
 
